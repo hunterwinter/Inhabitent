@@ -100,7 +100,7 @@ function custom_login_logo() {
 	</style>';
 }
 add_action('login_head', 'custom_login_logo');
-
+ 
 
 /**
  * Custom template tags for this theme.
