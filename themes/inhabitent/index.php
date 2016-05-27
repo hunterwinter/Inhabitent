@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
@@ -32,9 +32,14 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+	
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+
+<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+        <?php the_title(); ?>
+     <?php endforeach; wp_reset_postdata(); ?>
