@@ -9,12 +9,10 @@
 
 get_header(); ?>
 
-<h1>page-about.php</h1>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<div class="abouthero">
-			<h1> About </h1>
+			<h1>About</h1>
 		</div>
 	<section class="about-container">
 				<div class=" about-paragraphs">
@@ -35,5 +33,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

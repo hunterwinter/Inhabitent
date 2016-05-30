@@ -18,6 +18,14 @@ get_header(); ?>
 
 			<?php the_post_navigation(); ?>
 
+			<?php
+
+			if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+
+			?>	
+
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

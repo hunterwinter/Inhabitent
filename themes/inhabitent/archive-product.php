@@ -12,12 +12,27 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+			<header class="page-header archive-product">
+				<?php $terms = get_terms( 'product-type' ); ?>
+				<?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ):?>
+					<section class="product-info container">
+						<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+
+						<div class="product-type-container">
+							<?php foreach ( $terms as $term ) :?>
+							    <div class="product-type-wrapper">
+							        <p>
+							        	<a href="<?php echo get_post_type_archive_link() ?>/inhabitent/product-type/<?php echo $term->slug ?>/" class="">
+							        		<?php echo $term->slug ?> <!-- stuff -->
+							        	</a>
+							        </p>   
+							    </div>
+							<?php endforeach ?>
+						</div>
+					</section>
+				<?php endif; ?>
 			</header><!-- .page-header -->
+
 			<section class="all-products-wrap container">
 				<?php /* Start the Loop */ ?>
 <?php query_posts($query_string."&orderby=title&order=ASC"); ?>
@@ -43,6 +58,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 			</section>
+
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -50,6 +66,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -2,9 +2,11 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .archive-product .product-type-container {
 	padding: 0 300px;
 }
+
 .single-product-container {
 	width: 260px;
 	margin: 0 10px;
@@ -24,6 +26,7 @@
 			}
 		}
 }
+
 .single-product-container .entry-content {
 	display: flex;
 	align-items: center;

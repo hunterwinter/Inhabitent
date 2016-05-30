@@ -57,8 +57,221 @@ h2 {
     border-color:#d99054;
   }
 
+    img {
+      height: 70px;
+      width: auto;
+    }
+}
+
+/////// Journal ///////
+.journal-post {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  .journal-picture {
+    background: #e1e1e1;
+  }
+
   img {
-    height: 70px;
+    height: 250px;
     width: auto;
+    max-width: none;
+  }
+
+  li {
+    margin-right: 10px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 0;
+  }
+
+  .journal-info {
+    background: white;
+    padding-bottom: 20px;
+    margin: 0.75rem;
+    
+    span {
+      font-size: .8rem;
+    }
+    
+    a {
+      margin-bottom: 3rem;
+    }
+    
+    h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    padding-bottom: 20px;
+    
+    a {
+      text-decoration: none;
+      color: $color__link;
+      &:hover {
+        color: $color__link-visited;
+        }
+      }
+    }
+  }
+}
+
+//////adventures///////
+
+// .adventures {
+//   margin-bottom: 70px;
+//   h3 {
+//     a {
+//       color: white;
+//       font-family: $font__main;
+//       text-transform: none;
+//       font-size: 2rem;
+//       font-weight: 400;
+//       &:hover {
+//         color: #f0e4d1;
+//       }
+//     }
+//   }
+
+//   p {
+//     padding-top: 40px;
+//   }
+//   a {
+//     text-decoration: none;
+//   }
+//   ul {
+//   list-style: none;
+//   display: inline;
+//   padding-left: 0;
+//   margin-left: 0;
+//   li {
+//     h3 a {
+//       margin-bottom: 20px;
+//     }
+//     &:first-child {
+//       width: 49%;
+//       float: left;
+//       h3 a {
+//         font-size: 2.75rem;
+//         line-height: 1;
+//       }
+//     }
+//     &:nth-child(2) {
+//       width: 49%;
+//       float:right;
+//       h3 a {
+//         font-size: 2.25rem;
+//         line-height: 1;
+//       }
+//     }
+//     &:nth-child(3) {
+//       width: 24%;
+//       float: right;
+//       margin-left: 1%;
+//       margin-top: 1.75%;
+//       font-size: 1rem;
+//       h3 a {
+//         font-size: 1.5rem;
+//         line-height: 1;
+//       }
+//     }
+//     &:last-child {
+//       width: 24%;
+//       float: right;
+//       margin-top: 1.75%;
+//       h3 a {
+//         font-size: 1.5rem;
+//         line-height: 1;
+//       }
+//     }
+//   }
+//   }
+// }
+.canoe {
+  background:
+  linear-gradient(
+  rgba(0, 0, 0, 0.25),
+  rgba(0, 0, 0, 0.25)
+  ),
+  url(../../images/adventure-photos/canoe-girl.jpg) no-repeat center center;
+  background-size: cover, cover;
+  height: 620px;
+}
+.bonfire {
+  background:
+  linear-gradient(
+  rgba(0, 0, 0, 0.25),
+  rgba(0, 0, 0, 0.25)
+  ),
+  url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center center;
+  background-size: cover, cover;
+  height: 300px;
+}
+.hikers {
+  background:
+  linear-gradient(
+  rgba(0, 0, 0, 0.25),
+  rgba(0, 0, 0, 0.25)
+  ),
+  url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat center center;
+  background-size: cover, cover;
+  height: 300px;
+}
+.night-sky {
+  background:
+  linear-gradient(
+  rgba(0, 0, 0, 0.25),
+  rgba(0, 0, 0, 0.25)
+  ),
+  url(../../images/adventure-photos/night-sky.jpg) no-repeat center center;
+  background-size: cover, cover;
+  height: 300px;
+}
+.story-wrap {
+  position: relative;
+  .story-info {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 20px 10px;
+  }
+}
+.readtag {
+  border: 1px solid white;
+  padding: 12.5px 25px;
+  font-family: $font__pre;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.9rem;
+  &:hover {
+    background-color: $color__link;
+    color: white;
+    border: 1px solid $color__link;
+    outline: 0;
+  }
+  &:active {
+    outline: 0;
+  }
+  &:visited {
+    color: white;
+    &:hover {
+      color:white;
+    }
+  }
+}
+.button {
+  padding: 12.5px 25px;
+  font-family: $font__pre;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.1rem;
+  background-color: $color__link;
+  &:hover {
+    background-color: $color__link-hover;
+    color: white;
+  }
+  &:visited {
+    color: white;
+    &:hover {
+      color:white;
+    }
   }
 }
