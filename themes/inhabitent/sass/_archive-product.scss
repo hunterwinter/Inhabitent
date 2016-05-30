@@ -24,3 +24,31 @@
 			}
 		}
 }
+.single-product-container .entry-content {
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+}
+
+.archive-product .product-info {
+	text-align: center;
+	.product-type-wrapper,
+	.product-type-wrapper:hover {
+		border: none;
+		width: 100%;
+	}
+}
+
+
+.archive-product img,
+.archive-product a {
+	    height: 250px;
+	    width: 377px;
+}
+
+.archive-product h1 {
+	color: black;
+    font-size: 2.6rem;
+    font-weight: bold;
+    display: inline;
+}

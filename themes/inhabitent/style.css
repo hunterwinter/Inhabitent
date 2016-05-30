@@ -825,7 +825,8 @@ h2 {
     color: #d99054;
     text-transform: uppercase; }
   .site-footer a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
   .site-footer p {
     color: #fff; }
   .site-footer .site-info {
@@ -853,6 +854,9 @@ h2 {
     .site-footer .container .logo img {
       max-width: 50%;
       margin-top: 1.5rem; }
+
+i {
+  padding-right: 0.5rem; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -930,9 +934,34 @@ h2 {
       height: 22px;
       width: 69%; }
 
+.single-product-container .entry-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 8px; }
+
+.archive-product .product-info {
+  text-align: center; }
+  .archive-product .product-info .product-type-wrapper,
+  .archive-product .product-info .product-type-wrapper:hover {
+    border: none;
+    width: 100%; }
+
+.archive-product img,
+.archive-product a {
+  height: 250px;
+  width: 377px; }
+
+.archive-product h1 {
+  color: black;
+  font-size: 2.6rem;
+  font-weight: bold;
+  display: inline; }
+
 .side-bar-flex {
   display: -ms-flexbox;
   display: flex; }
 
 .container2 {
-  width: 27%; }
+  width: 1120px; }

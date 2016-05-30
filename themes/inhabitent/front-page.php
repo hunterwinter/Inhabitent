@@ -5,7 +5,7 @@
  * @package inhabitent_theme
  */
 get_header(); ?>
-​<h1>front-page.php</h1>
+​
 	<div id="primary" class="content-area-front">
 		<main id="main" class="site-main" role="main">
 ​

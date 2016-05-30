@@ -9,6 +9,7 @@
 
   a {
     color: $color__background-body;
+    text-decoration: none;
   }
 
   p {
@@ -43,3 +44,8 @@
     }
   }
 }
+
+i{
+  padding-right: 0.5rem;
+}
+

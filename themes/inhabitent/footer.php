@@ -14,11 +14,11 @@
 					<div class="contact-info">
 						<h3>Contact Info</h3>
 							<p>
-							<i class="fa fa-envelope"></i>
+							<i class="fa fa-envelope fa-lg"></i>
 							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 							</p>
 							<p>
-								<i class="fa fa-phone"></i>
+								<i class="fa fa-phone fa-lg"></i>
 								<a href="#">778-456-7891</a>
 							</p>
 							<p>
