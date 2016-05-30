@@ -5,7 +5,7 @@
  * @package inhabitent_theme
  */
 get_header(); ?>
-​
+​<h1>front-page.php</h1>
 	<div id="primary" class="content-area-front">
 		<main id="main" class="site-main" role="main">
 ​
@@ -17,21 +17,21 @@ get_header(); ?>
 ​
 			<!-- Shop Stuff -->
 ​
-			<h2>Shop Stuff</h2>
+			<?php $terms = get_terms( 'product-type' )?>
 				<section class="shop-stuff">
-					<?php $terms = get_terms( 'product-type' )?>
+					<h2>Shop Stuff</h2>
+					<div class=product-box>
 						<?php foreach ( $terms as $product_type) : ?>
-​
-						<div class="product-block">
-							<img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $product_type->slug; ?>.svg" alt="product-type" />
-​
-							<p class="description">
-								<?php echo $product_type->description; ?>
-							</p>
-							<a href="<?php the_permalink(); ?>product-type/<?php echo $product_type->slug; ?>" class="button"><?php echo $product_type->name; ?> Stuff</a>
-​
+							<div class="product-block">
+								<img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $product_type->slug; ?>.svg" alt="product-type" height="70" width="70"/>
+	​
+								<p class="description">
+									<?php echo $product_type->description; ?>
+								</p>
+								<a href="<?php the_permalink(); ?>product-type/<?php echo $product_type->slug; ?>" class="button"><?php echo $product_type->name; ?> Stuff</a>
+	​						</div>
+						<?php endforeach; ?>
 					</div>
-					<?php endforeach; ?>
 ​
 				</section>
 ​

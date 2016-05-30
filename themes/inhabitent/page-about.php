@@ -9,13 +9,24 @@
 
 get_header(); ?>
 
+<h1>page-about.php</h1>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<div class="abouthero">
-			<h1> ABOUT </h1>
+			<h1> About </h1>
 		</div>
+	<section class="about-container">
+				<div class=" about-paragraphs">
+					<h2 class="about-title">Our Story</h2>
+						<?php echo CFS()->get( 'our_story' ); ?>
+					<h2 class="about-title">Our Team</h2>
+						<?php echo CFS()->get( 'our_team' ); ?>
+				</div>
+			</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+
+			 <?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 

@@ -18,16 +18,31 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+			<section class="all-products-wrap container">
+				<?php /* Start the Loop */ ?>
+<?php query_posts($query_string."&orderby=title&order=ASC"); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<div class="single-product-container">
+								<header class="entry-header">
+									<?php if ( has_post_thumbnail() ) : ?>
+										<a href="<?php the_permalink(); ?> ">
+											<?php the_post_thumbnail( 'large' ); ?>
+										</a> 
+									<?php endif; ?>
+								</header><!-- .entry-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+								<div class="entry-content product-type-wrapper">
+									<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+									<!-- Price goes here -->
+									<?php echo CFS()->get( 'price' ); ?>
+								</div><!-- .entry-content -->
+							</div>
+					</article><!-- #post-## -->
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
 
-			<?php endwhile; ?>
-
+				<?php endwhile; ?>
+			</section>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -38,6 +53,4 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -24,12 +24,19 @@ a {
 	}
 }
 
+a {
+	color: #fff;
+}
+
 /* Menus */
 
 .main-navigation {
 	display: flex;
 	width: 100%;
 	justify-content: flex-end;
+	font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
 
 	ul {
 		display: flex;
@@ -78,6 +85,9 @@ a {
 	li {
 		float: left;
 		position: relative;
+		padding-left: 1.5rem;
+		font-family: novocento, sans-serif;
+		color: #fff;
 
 		&:hover > a,
 		&.focus > a {

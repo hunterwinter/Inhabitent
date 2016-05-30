@@ -7,9 +7,11 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<h1>index.php</h1>
 
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main side-bar-flex" role="main">
+	<div class="container2">
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -32,14 +34,15 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-	
+	</div>
+	<div class="side-bar">
+		<?php get_sidebar(); ?>
+	</div>
+<!-- <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+        <?php the_title(); ?>
+     <?php endforeach; wp_reset_postdata(); ?> -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
-
-<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-        <?php the_title(); ?>
-     <?php endforeach; wp_reset_postdata(); ?>

@@ -36,22 +36,27 @@ function inhabitent_about_splash_bg() {
                             rgba(0,0,0,0.4)
                         ),
                        url('". CFS()->get('splash_hero') ."');
+                   display: flex;
                    background-size: cover;
                    background-position: bottom;
+                   height: 100vh;
+                   width: 100vw;
+                   padding-top: 0;
+                   justify-content: flex-start;
            }";
    wp_add_inline_style( 'inhabitent-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_splash_bg' );
 
-// function inhabitent_filter_product_query( $query ) {
+function inhabitent_filter_product_query( $query ) {
 	
-// 	if( is_home() && !is_admin() && $query->is_main_query() ) {
+	if( is_home() && !is_admin() && $query->is_main_query() ) {
 
-// 		$query->set( 'orderby', 'title');
-// 		$query->set( 'orderby', 'ASC');
-// 		$query->set( 'post_per_page', 16);
+		$query->set( 'orderby', 'title');
+		$query->set( 'orderby', 'ASC');
+		$query->set( 'post_per_page', 16);
 
-// 	}
-// }
+	}
+}
 
-// add_action( 'pre_get_posts', 'inhabitent_filter_product_query' ); ?>
+add_action( 'pre_get_posts', 'inhabitent_filter_product_query' ); ?>

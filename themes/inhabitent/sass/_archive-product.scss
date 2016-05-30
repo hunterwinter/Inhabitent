@@ -1,0 +1,26 @@
+.all-products-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.archive-product .product-type-container {
+	padding: 0 300px;
+}
+.single-product-container {
+	width: 260px;
+	margin: 0 10px;
+		.entry-header,
+		.product-type-wrapper  {
+			width: 270px;
+			margin: 0;
+			h1 {
+				font-size: smaller;
+				text-overflow: ellipsis;
+			    display: inline-block;
+			    overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			    height: 22px;
+			    width: 69%;
+			}
+		}
+}
