@@ -42,7 +42,9 @@ function inhabitent_about_splash_bg() {
                    height: 100vh;
                    width: 100vw;
                    padding-top: 0;
-                   justify-content: flex-start;
+                   justify-content: center; 
+                   align-items: center;
+                   color: white;
            }";
    wp_add_inline_style( 'inhabitent-style', $custom_css );
 }
