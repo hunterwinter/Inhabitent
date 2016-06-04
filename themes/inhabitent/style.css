@@ -827,22 +827,26 @@ h2 {
 .canoe {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 620px; }
+  height: 620px;
+  width: 620px; }
 
 .bonfire {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 300px; }
+  height: 300px;
+  width: 300px; }
 
 .hikers {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 300px; }
+  height: 300px;
+  width: 300px; }
 
 .night-sky {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/night-sky.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 300px; }
+  height: 300px;
+  width: 300px; }
 
 .story-wrap {
   position: relative; }

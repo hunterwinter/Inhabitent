@@ -37,7 +37,7 @@ function tent_register_product_cpt() {
 		'filter_items_list'     => 'Filter products list',
 	);
 	$args = array(
-		'label'                 => 'product',
+		'label'                 => 'Product',
 		'description'           => 'The products for the inhabitent site.',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
