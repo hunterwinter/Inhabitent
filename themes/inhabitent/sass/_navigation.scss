@@ -65,6 +65,7 @@ a {
 			}
 
 			a {
+				display: inline;
 				width: 200px;
 			}
 
@@ -95,9 +96,9 @@ a {
 		}
 	}
 	a {
-		display: block;
+		display: inline;
 		text-decoration: none;
-		width: 65px;
+		width: 60px;
 	}
 
 	.current_page_item > a,
@@ -138,8 +139,19 @@ a {
 	}
 }
 
-.search-submit {
+.search-btn {
 	color: #fff;
 	background: none;
 	border: none;
+	display: inline;
 }
+
+input {
+	display: inline;
+}
+
+.search-field {
+	display: inline;
+}
+
+

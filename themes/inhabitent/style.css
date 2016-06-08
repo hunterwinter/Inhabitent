@@ -489,6 +489,7 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
+        display: inline;
         width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
@@ -501,9 +502,9 @@ a {
     color: #fff;
     font-size: 14px; }
   .main-navigation a {
-    display: block;
+    display: inline;
     text-decoration: none;
-    width: 65px; }
+    width: 60px; }
 
 #menu-item-132 {
   padding-right: 1.5rem; }
@@ -532,10 +533,17 @@ a {
   text-align: right;
   width: 50%; }
 
-.search-submit {
+.search-btn {
   color: #fff;
   background: none;
-  border: none; }
+  border: none;
+  display: inline; }
+
+input {
+  display: inline; }
+
+.search-field {
+  display: inline; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -820,7 +828,8 @@ h2 {
   .journal-post li {
     margin-right: 10px;
     border: 1px solid #e1e1e1;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    list-style-type: none; }
   .journal-post .journal-info {
     background: white;
     padding-bottom: 20px;
@@ -839,42 +848,105 @@ h2 {
         .journal-post .journal-info h3 a:hover {
           color: purple; }
 
-.front-page-wrapper {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex; }
-  .front-page-wrapper .adventures .container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-
 .canoe {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 620px;
-  width: 620px; }
+  height: 540px;
+  width: 540px; }
 
 .bonfire {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 300px;
-  width: 300px; }
+  height: 270px;
+  width: 560px; }
 
 .hikers {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 300px;
-  width: 300px; }
+  height: 270px;
+  width: 270px; }
 
 .night-sky {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/night-sky.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 300px;
-  width: 300px; }
+  height: 270px;
+  width: 270px; }
+
+.adventures h1 {
+  text-align: center;
+  line-height: 10rem; }
+
+.adventures h3 {
+  /* ADVENTURE TITLES */ }
+  .adventures h3 a {
+    color: white;
+    font-family: "Merriweather", sans-serif;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    padding-bottom: 10rem; }
+    .adventures h3 a:hover {
+      color: #f0e4d1; }
+
+.adventures p {
+  /* MORE ADVENTURE BUTTON */
+  padding-top: 40px; }
+
+.adventures img {
+  max-height: 560px;
+  max-width: none;
+  width: auto;
+  z-index: -1;
+  position: relative;
+  display: block; }
+
+.adventures ul {
+  list-style: none;
+  display: inline;
+  padding-left: 0;
+  margin-left: 0; }
+  .adventures ul li h3 a {
+    margin-bottom: 20px; }
+  .adventures ul li:first-child {
+    width: 49%;
+    float: left; }
+    .adventures ul li:first-child h3 a {
+      font-size: 3rem;
+      line-height: 1.3; }
+  .adventures ul li:nth-child(2) {
+    width: 49%;
+    float: right; }
+    .adventures ul li:nth-child(2) img {
+      height: 250px;
+      width: 100%; }
+    .adventures ul li:nth-child(2) h3 a {
+      font-size: 2.5rem;
+      line-height: 1.3; }
+  .adventures ul li:nth-child(3), .adventures ul li:last-child {
+    width: 24%;
+    float: right;
+    margin-left: 1%;
+    margin-top: 1.75%;
+    font-size: 1.25rem; }
+    .adventures ul li:nth-child(3) img, .adventures ul li:last-child img {
+      height: 290px; }
+    .adventures ul li:nth-child(3) h3 a, .adventures ul li:last-child h3 a {
+      font-size: 1.75rem;
+      line-height: 1.3; }
 
 .story-wrap {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 1.75%;
+  margin-left: 1%; }
+  .story-wrap .adventure-img {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+    padding: 0; }
   .story-wrap .story-info {
     position: absolute;
     top: 0;
@@ -886,8 +958,10 @@ h2 {
   padding: 12.5px 25px;
   font-family: "Courier 10 Pitch", Courier, monospace;
   text-transform: uppercase;
+  text-decoration: none;
   color: white;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  line-height: 5rem; }
   .readtag:hover {
     background-color: #248A83;
     color: white;
@@ -904,11 +978,12 @@ h2 {
   padding: 12.5px 25px;
   font-family: "Courier 10 Pitch", Courier, monospace;
   text-transform: uppercase;
+  text-decoration: none;
   color: white;
   font-size: 1.1rem;
   background-color: #248A83; }
   .button:hover {
-    background-color: midnightblue;
+    background-color: #19625d;
     color: white; }
   .button:visited {
     color: white; }
@@ -1065,6 +1140,29 @@ i {
   margin-left: 0;
   list-style: none; }
 
+.product-links {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0;
+  padding-left: 0; }
+  .product-links li {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-weight: normal;
+    text-transform: uppercase; }
+    .product-links li a {
+      color: #248A83; }
+      .product-links li a:hover {
+        color: purple; }
+
+.pageheader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 .all-products-wrap {
   display: -ms-flexbox;
   display: flex;
@@ -1073,12 +1171,6 @@ i {
 
 .archive-product .product-type-container {
   padding: 0 300px; }
-
-.pageheader {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
 
 .single-product-container {
   width: 260px;
@@ -1131,7 +1223,8 @@ i {
 .archive-product img,
 .archive-product a {
   height: 220px;
-  width: 270px; }
+  width: 270px;
+  object-fit: cover; }
 
 .archive-product h1,
 .product-type h1 {
@@ -1284,8 +1377,8 @@ input[type=submit] {
   background-color: #248a83;
   color: white;
   position: absolute;
-  right: 89px;
-  bottom: 7px;
+  right: 20px;
+  bottom: 6px;
   font-family: "Courier 10 Pitch", Courier, monospace;
   text-transform: uppercase;
   padding: 2.5px 20px;
