@@ -12,19 +12,15 @@ body {
     background: #fff;
 }
 
-// section {
-//     display: flex;
-//     justify-content: flex-start;
-// }
 
 .home-hero{
-	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
-	background-size: cover, cover;
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover, cover;
     margin-top: -50px;
-	display: flex;
-	justify-content: center;
-	height: 100vh;
-	width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 h2 {
@@ -116,75 +112,20 @@ h2 {
 
 //////adventures///////
 
-// .adventures {
-//   margin-bottom: 70px;
-//   h3 {
-//     a {
-//       color: white;
-//       font-family: $font__main;
-//       text-transform: none;
-//       font-size: 2rem;
-//       font-weight: 400;
-//       &:hover {
-//         color: #f0e4d1;
-//       }
-//     }
-//   }
+.front-page-wrapper{
+  position: relative;
+  display: flex;
 
-//   p {
-//     padding-top: 40px;
-//   }
-//   a {
-//     text-decoration: none;
-//   }
-//   ul {
-//   list-style: none;
-//   display: inline;
-//   padding-left: 0;
-//   margin-left: 0;
-//   li {
-//     h3 a {
-//       margin-bottom: 20px;
-//     }
-//     &:first-child {
-//       width: 49%;
-//       float: left;
-//       h3 a {
-//         font-size: 2.75rem;
-//         line-height: 1;
-//       }
-//     }
-//     &:nth-child(2) {
-//       width: 49%;
-//       float:right;
-//       h3 a {
-//         font-size: 2.25rem;
-//         line-height: 1;
-//       }
-//     }
-//     &:nth-child(3) {
-//       width: 24%;
-//       float: right;
-//       margin-left: 1%;
-//       margin-top: 1.75%;
-//       font-size: 1rem;
-//       h3 a {
-//         font-size: 1.5rem;
-//         line-height: 1;
-//       }
-//     }
-//     &:last-child {
-//       width: 24%;
-//       float: right;
-//       margin-top: 1.75%;
-//       h3 a {
-//         font-size: 1.5rem;
-//         line-height: 1;
-//       }
-//     }
-//   }
-//   }
-// }
+  .adventures .container{
+    display: flex;
+    flex-direction: column;
+
+    .adventures {
+
+    }
+  }
+}
+
 .canoe {
   background:
   linear-gradient(
@@ -196,6 +137,7 @@ h2 {
   height: 620px;
   width: 620px;
 }
+
 .bonfire {
   background:
   linear-gradient(
@@ -207,6 +149,7 @@ h2 {
   height: 300px;
   width: 300px;
 }
+
 .hikers {
   background:
   linear-gradient(
@@ -218,6 +161,7 @@ h2 {
   height: 300px;
   width: 300px;
 }
+
 .night-sky {
   background:
   linear-gradient(
@@ -229,6 +173,7 @@ h2 {
   height: 300px;
   width: 300px;
 }
+
 .story-wrap {
   position: relative;
   .story-info {
@@ -238,6 +183,7 @@ h2 {
     padding: 20px 10px;
   }
 }
+
 .readtag {
   border: 1px solid white;
   padding: 12.5px 25px;
@@ -261,6 +207,7 @@ h2 {
     }
   }
 }
+
 .button {
   padding: 12.5px 25px;
   font-family: $font__pre;

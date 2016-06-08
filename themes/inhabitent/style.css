@@ -446,7 +446,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -498,10 +498,15 @@ a {
     position: relative;
     padding-left: 1.5rem;
     font-family: novocento, sans-serif;
-    color: #fff; }
+    color: #fff;
+    font-size: 14px; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    width: 65px; }
+
+#menu-item-132 {
+  padding-right: 1.5rem; }
 
 /* Small menu. */
 .menu-toggle,
@@ -526,6 +531,11 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.search-submit {
+  color: #fff;
+  background: none;
+  border: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -605,11 +615,11 @@ a {
   .widget-area h2 {
     color: #2f1339; }
   .widget-area a {
-    color: royalblue; }
+    color: #248A83; }
     .widget-area a:hover {
       color: midnightblue; }
     .widget-area a:visited {
-      color: royalblue; }
+      color: #248A83; }
       .widget-area a:visited:hover {
         color: midnightblue; }
 
@@ -735,6 +745,11 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
 body {
   display: -ms-flexbox;
   display: flex;
@@ -820,9 +835,19 @@ h2 {
       padding-bottom: 20px; }
       .journal-post .journal-info h3 a {
         text-decoration: none;
-        color: royalblue; }
+        color: #248A83; }
         .journal-post .journal-info h3 a:hover {
           color: purple; }
+
+.front-page-wrapper {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex; }
+  .front-page-wrapper .adventures .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
 
 .canoe {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/canoe-girl.jpg) no-repeat center center;
@@ -864,9 +889,9 @@ h2 {
   color: white;
   font-size: 0.9rem; }
   .readtag:hover {
-    background-color: royalblue;
+    background-color: #248A83;
     color: white;
-    border: 1px solid royalblue;
+    border: 1px solid #248A83;
     outline: 0; }
   .readtag:active {
     outline: 0; }
@@ -881,7 +906,7 @@ h2 {
   text-transform: uppercase;
   color: white;
   font-size: 1.1rem;
-  background-color: royalblue; }
+  background-color: #248A83; }
   .button:hover {
     background-color: midnightblue;
     color: white; }
@@ -897,11 +922,6 @@ h2 {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
 
 div {
   display: block; }
@@ -942,15 +962,6 @@ fieldset {
 
 .search-field {
   display: none; }
-
-button.searchsubmit {
-  display: none; }
-
-.container {
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  width: 1120px; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1026,11 +1037,11 @@ i {
   .widget-area h2 {
     color: #2f1339; }
   .widget-area a {
-    color: royalblue; }
+    color: #248A83; }
     .widget-area a:hover {
       color: midnightblue; }
     .widget-area a:visited {
-      color: royalblue; }
+      color: #248A83; }
       .widget-area a:visited:hover {
         color: midnightblue; }
 
@@ -1063,44 +1074,67 @@ i {
 .archive-product .product-type-container {
   padding: 0 300px; }
 
+.pageheader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 .single-product-container {
   width: 260px;
   margin: 0 10px; }
+  .single-product-container img,
+  .single-product-container .entry-header {
+    height: 220px; }
   .single-product-container .entry-header,
   .single-product-container .product-type-wrapper {
-    width: 270px;
+    position: relative;
+    width: 250px;
     margin: 0; }
-    .single-product-container .entry-header h1,
-    .single-product-container .product-type-wrapper h1 {
-      font-size: smaller;
-      text-overflow: ellipsis;
-      display: inline-block;
+    .single-product-container .entry-header h2,
+    .single-product-container .product-type-wrapper h2 {
+      background-color: #fff;
+      font-size: 1rem;
+      display: inline;
       overflow: hidden;
       white-space: nowrap;
-      text-overflow: ellipsis;
       height: 22px;
-      width: 69%; }
+      position: left;
+      width: 69%;
+      font-family: Merriweather, serif; }
+      .single-product-container .entry-header h2:before,
+      .single-product-container .product-type-wrapper h2:before {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content: "......................................."; }
 
 .single-product-container .entry-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 0 8px; }
+  padding: 10px 0;
+  border: 1px solid #e1e1e1; }
+  .single-product-container .entry-content span {
+    background-color: #fff;
+    float: right; }
 
-.archive-product .product-info {
-  text-align: center; }
+.archive-product .product-info,
+.product-type {
+  text-align: center;
+  margin-top: 20v; }
   .archive-product .product-info .product-type-wrapper,
-  .archive-product .product-info .product-type-wrapper:hover {
+  .archive-product .product-info .product-type-wrapper:hover,
+  .product-type .product-type-wrapper,
+  .product-type .product-type-wrapper:hover {
     border: none;
     width: 100%; }
 
+.single-product-container img,
 .archive-product img,
 .archive-product a {
-  height: 250px;
-  width: 377px; }
+  height: 220px;
+  width: 270px; }
 
-.archive-product h1 {
+.archive-product h1,
+.product-type h1 {
   color: black;
   font-size: 2.6rem;
   font-weight: bold;
@@ -1141,11 +1175,11 @@ i {
 
 a {
   text-decoration: none;
-  color: royalblue; }
+  color: #248A83; }
   a:hover {
     color: #2f1339; }
   a:visited {
-    color: royalblue; }
+    color: #248A83; }
     a:visited:hover {
       color: #2f1339; }
 
@@ -1194,7 +1228,7 @@ input[type=submit] {
   text-transform: uppercase;
   color: white;
   font-size: 0.9rem;
-  background-color: royalblue;
+  background-color: #248A83;
   border-radius: 0;
   box-shadow: none;
   text-shadow: none;
@@ -1209,9 +1243,9 @@ input[type=submit] {
       color: white; }
 
 .logged-in-as a {
-  color: royalblue; }
+  color: #248A83; }
   .logged-in-as a:visited {
-    color: royalblue; }
+    color: #248A83; }
     .logged-in-as a:visited:hover {
       color: #5ac4c1; }
   .logged-in-as a:hover {
@@ -1226,7 +1260,7 @@ input[type=submit] {
   margin-top: 0;
   padding-top: 50px; }
 
-.content-area {
+.blog .content-area {
   padding: 3.25rem 5% 3rem 0;
   width: 73%; }
 
@@ -1268,9 +1302,9 @@ input[type=submit] {
   color: black;
   font-size: 0.9rem; }
   .moretag:hover {
-    background-color: royalblue;
+    background-color: #248A83;
     color: white;
-    border: 1px solid royalblue; }
+    border: 1px solid #248A83; }
   .moretag:visited {
     color: black; }
     .moretag:visited:hover {
@@ -1290,7 +1324,7 @@ input[type=submit] {
   text-transform: uppercase;
   font-family: "Courier 10 Pitch", Courier, monospace; }
   .cat-links a, .tags-links a {
-    color: royalblue; }
+    color: #248A83; }
     .cat-links a:hover, .tags-links a:hover {
       color: #2f1339; }
 
@@ -1301,3 +1335,57 @@ input[type=submit] {
   background: transparent;
   padding: 5px 30px;
   margin-top: 30px; }
+
+.abouthero {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh; }
+  .abouthero h1 {
+    color: white;
+    font-size: 3rem; }
+
+.about-container {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px; }
+  .about-container .about-paragraphs {
+    margin: 3rem auto;
+    width: 750px; }
+    .about-container .about-paragraphs .about-title {
+      text-align: center;
+      font-size: 2rem;
+      font-style: "Novocento", sans-serif;
+      color: #2f1339; }
+
+p span {
+  font-size: 14px; }
+
+.status-publish h1 {
+  font-size: 2.5rem; }
+
+.status-publish h2 {
+  color: #2f1339;
+  font-size: 2rem; }
+
+.wpcf7-form label {
+  text-transform: uppercase;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 1.1rem;
+  font-weight: normal; }
+
+.wpcf7-form .required {
+  color: #d99054;
+  font-size: 1.1rem; }
+
+.wpcf7-form .ajax-loader {
+  height: 20px;
+  width: 20px; }
+
+.wpcf7-form .wpcf7-submit {
+  font-size: .9rem;
+  padding: 8px 22.5px; }

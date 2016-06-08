@@ -5,9 +5,11 @@
  * @package inhabitent_Theme
  */
 
+
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div class="product-grid-wrap">
+	<div id="primary" class="content-area container">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -32,7 +34,6 @@ get_header(); ?>
 					</section>
 				<?php endif; ?>
 			</header><!-- .page-header -->
-
 			<section class="all-products-wrap container">
 				<?php /* Start the Loop */ ?>
 <?php query_posts($query_string."&orderby=title&order=ASC"); ?>
@@ -48,9 +49,9 @@ get_header(); ?>
 								</header><!-- .entry-header -->
 
 								<div class="entry-content product-type-wrapper">
-									<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-									<!-- Price goes here -->
-									<?php echo CFS()->get( 'price' ); ?>
+									<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+                									<!-- Price goes here -->
+									<span><?php echo CFS()->get( 'price' ); ?></span>
 								</div><!-- .entry-content -->
 							</div>
 					</article><!-- #post-## -->
@@ -70,4 +71,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div>
+
 <?php get_footer(); ?>

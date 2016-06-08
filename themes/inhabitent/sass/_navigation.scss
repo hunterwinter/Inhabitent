@@ -88,6 +88,7 @@ a {
 		padding-left: 1.5rem;
 		font-family: novocento, sans-serif;
 		color: #fff;
+		font-size: 14px;
 
 		&:hover > a,
 		&.focus > a {
@@ -96,6 +97,7 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
+		width: 65px;
 	}
 
 	.current_page_item > a,
@@ -104,20 +106,16 @@ a {
 	}
 }
 
+#menu-item-132 {
+	padding-right: 1.5rem;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
-// @media screen and (min-width: 37.5em) {
-// 	.menu-toggle {
-// 		display: none;
-// 	}
-// 	.main-navigation ul {
-// 		display: block;
-// 	}
-// }
 
 .comment-navigation,
 .posts-navigation,
@@ -138,4 +136,10 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.search-submit {
+	color: #fff;
+	background: none;
+	border: none;
 }

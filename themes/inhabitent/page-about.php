@@ -22,9 +22,6 @@ get_header(); ?>
 					<?php echo CFS()->get( 'our_team' ); ?>
 			</div>
 		</section>
-
-
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
