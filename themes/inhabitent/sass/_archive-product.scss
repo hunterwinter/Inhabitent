@@ -130,4 +130,24 @@
   justify-content: center;
 }
 
+////////// taxonomy ////////////
+
+.tax-contain{
+  text-align: center;
+}
+
+.tax-info{
+  text-align: center;
+}
+
+.taxonomy-description {
+  display: flex;
+  width: 800px;
+  margin: 2rem auto 3rem;
+
+  p {
+   margin: 0 auto;
+  }
+}
+
 

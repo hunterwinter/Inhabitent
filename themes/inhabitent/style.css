@@ -859,7 +859,7 @@ h2 {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center center;
   background-size: cover, cover;
   height: 250px;
-  width: 560px; }
+  width: 550px; }
 
 .hikers {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/mountain-hikers.jpg) no-repeat center center;
@@ -928,7 +928,7 @@ h2 {
     width: 24%;
     float: right;
     margin-left: 1%;
-    margin-top: 1.75%;
+    margin-top: 1.45%;
     font-size: 1.25rem; }
     .adventures ul li:nth-child(3) img, .adventures ul li:last-child img {
       height: 290px; }
@@ -944,7 +944,7 @@ h2 {
   -ms-flex-pack: center;
       justify-content: center;
   margin-top: 1.75%;
-  margin-left: 1%; }
+  margin-left: 0%; }
   .story-wrap .adventure-img {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
     padding: 0; }
@@ -1257,12 +1257,75 @@ i {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.tax-contain {
+  text-align: center; }
+
+.tax-info {
+  text-align: center; }
+
+.taxonomy-description {
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  margin: 2rem auto 3rem; }
+  .taxonomy-description p {
+    margin: 0 auto; }
+
 .side-bar-flex {
   display: -ms-flexbox;
   display: flex; }
 
 .container2 {
   width: 1120px; }
+
+.widget-title {
+  font-size: 1.5rem; }
+
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none; }
+
+/* area */
+.widget-area {
+  width: 27%;
+  padding-left: 5%;
+  padding-top: 3rem; }
+  .widget-area h2 {
+    color: #2f1339; }
+  .widget-area a {
+    color: #248A83; }
+    .widget-area a:hover {
+      color: midnightblue; }
+    .widget-area a:visited {
+      color: #248A83; }
+      .widget-area a:visited:hover {
+        color: midnightblue; }
+
+/* Contact Information */
+.textwidget p {
+  display: -ms-flexbox;
+  display: flex; }
+
+.textwidget i {
+  margin-right: 10px;
+  line-height: 1.8rem;
+  width: 20px; }
+
+/* Business-hours */
+.inhabitent-hours-class p {
+  font-size: .9rem; }
+
+/* Archive */
+.widget_archive ul {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none; }
 
 .comments-title {
   line-height: 1.25;
@@ -1377,7 +1440,8 @@ input[type=submit] {
   margin-top: 0;
   padding-top: 50px; }
 
-.blog .content-area {
+.blog-content-area {
+  border-right: 1px solid #e1e1e1;
   padding: 3.25rem 5% 3rem 0;
   width: 73%; }
 
@@ -1401,12 +1465,13 @@ input[type=submit] {
   background-color: #248a83;
   color: white;
   position: absolute;
-  right: 20px;
-  bottom: 6px;
+  right: 0;
+  bottom: 0;
   font-family: "Courier 10 Pitch", Courier, monospace;
   text-transform: uppercase;
   padding: 2.5px 20px;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  bottom: 6px; }
 
 .entry-meta a:hover {
   color: #f0e4d1; }
@@ -1432,10 +1497,12 @@ input[type=submit] {
   .readmore a {
     text-decoration: none; }
 
-.entry-content span {
-  line-height: 1.75;
-  letter-spacing: .5px;
-  font-size: 1rem; }
+.entry-content {
+  width: 760px; }
+  .entry-content span {
+    line-height: 1.75;
+    letter-spacing: .5px;
+    font-size: 1rem; }
 
 .cat-links, .tags-links {
   text-transform: uppercase;
@@ -1453,6 +1520,12 @@ input[type=submit] {
   padding: 5px 30px;
   margin-top: 30px; }
 
+.journal-wrap img.attachment-large.size-large.wp-post-image {
+  width: 760px; }
+
+.single-wrap img.attachment-large.size-large.wp-post-image {
+  width: 760px; }
+
 .abouthero {
   display: -ms-flexbox;
   display: flex;
@@ -1463,7 +1536,9 @@ input[type=submit] {
   height: 100vh; }
   .abouthero h1 {
     color: white;
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-family: novocento, serif;
+    text-transform: uppercase; }
 
 .about-container {
   width: 750px;
@@ -1481,6 +1556,10 @@ input[type=submit] {
 
 p span {
   font-size: 14px; }
+
+.find-wrap {
+  display: -ms-flexbox;
+  display: flex; }
 
 .status-publish h1 {
   font-size: 2.5rem; }
@@ -1506,3 +1585,58 @@ p span {
 .wpcf7-form .wpcf7-submit {
   font-size: .9rem;
   padding: 8px 22.5px; }
+
+.search-whole-page {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search .page-title {
+  font-size: 2.25rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px; }
+
+.search .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.search a:visited {
+  color: #248A83; }
+  .search a:visited:hover {
+    color: purple; }
+
+.search ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0; }
+
+.search .search-form fieldset {
+  border: 0; }
+
+.search .entry-title {
+  position: relative;
+  background: none;
+  padding: 0;
+  max-width: 100%; }
+
+.search .entry-meta {
+  background: none;
+  color: black;
+  position: relative;
+  padding: 0; }
+
+.search .readmore {
+  margin-bottom: 30px; }
+
+.search .moretag {
+  color: black; }
+  .search .moretag:visited {
+    color: black; }
+  .search .moretag:hover {
+    color: white; }
+    .search .moretag:hover:visited {
+      color: white; }
+
+.search .page-content {
+  padding-top: 10px; }

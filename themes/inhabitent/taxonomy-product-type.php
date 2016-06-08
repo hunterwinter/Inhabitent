@@ -20,9 +20,10 @@ get_header(); ?>
 					<section class="product-info container">
 						<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 
-						<div class="product-type-container">
-						    <div class="product-type-wrapper">
+						<div class="tax-contain">
+						    <div class="tax-info">
 						        <p> <?php the_archive_description( '<div class="taxonomy-description">', '</div>' );  ?>
+								
 						        </p>   
 						    </div>						
 						</div>
@@ -31,7 +32,6 @@ get_header(); ?>
 			</header><!-- .page-header -->
 			<section class="all-products-wrap container">
 				<?php /* Start the Loop */ ?>
-<?php query_posts($query_string."&orderby=title&order=ASC"); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<div class="single-product-container">

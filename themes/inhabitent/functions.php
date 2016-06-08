@@ -87,6 +87,7 @@ function inhabitent_scripts() {
 
 	$script_url = get_template_directory_uri() . '/js/scripts.js';
 
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 	wp_enqueue_script( 'jquery');
 	wp_enqueue_script( 'inhabitent_comments', $script_url, array('jquery'), false, true );
 
