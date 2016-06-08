@@ -474,7 +474,8 @@ a {
     display: flex;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    width: 325px; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -504,7 +505,7 @@ a {
   .main-navigation a {
     display: inline;
     text-decoration: none;
-    width: 60px; }
+    width: 70px; }
 
 #menu-item-132 {
   padding-right: 1.5rem; }
@@ -539,11 +540,11 @@ a {
   border: none;
   display: inline; }
 
-input {
-  display: inline; }
+#search-field {
+  display: inline-block; }
 
-.search-field {
-  display: inline; }
+#menu-item-132 {
+  padding-right: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -857,7 +858,7 @@ h2 {
 .bonfire {
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../images/adventure-photos/beach-bonfire.jpg) no-repeat center center;
   background-size: cover, cover;
-  height: 270px;
+  height: 250px;
   width: 560px; }
 
 .hikers {
@@ -1140,6 +1141,9 @@ i {
   margin-left: 0;
   list-style: none; }
 
+.page-title {
+  margin: 0.1em 3em; }
+
 .product-links {
   list-style: none;
   display: -ms-flexbox;
@@ -1161,23 +1165,27 @@ i {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  margin-bottom: 0.5em 3em; }
 
 .all-products-wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-bottom: 4em; }
 
 .archive-product .product-type-container {
-  padding: 0 300px; }
+  margin-bottom: 3rem;
+  border-bottom: 1px dashed #c8c8c8; }
 
 .single-product-container {
   width: 260px;
   margin: 0 10px; }
   .single-product-container img,
   .single-product-container .entry-header {
-    height: 220px; }
+    height: 220px;
+    border-bottom: 4px solid #d1d1d1; }
   .single-product-container .entry-header,
   .single-product-container .product-type-wrapper {
     position: relative;
@@ -1202,7 +1210,7 @@ i {
         content: "......................................."; }
 
 .single-product-container .entry-content {
-  padding: 10px 0;
+  padding: 15px 0;
   border: 1px solid #e1e1e1; }
   .single-product-container .entry-content span {
     background-color: #fff;
@@ -1217,7 +1225,14 @@ i {
   .product-type .product-type-wrapper,
   .product-type .product-type-wrapper:hover {
     border: none;
-    width: 100%; }
+    width: 80px;
+    margin-bottom: 2em; }
+    .archive-product .product-info .product-type-wrapper p,
+    .archive-product .product-info .product-type-wrapper:hover p,
+    .product-type .product-type-wrapper p,
+    .product-type .product-type-wrapper:hover p {
+      font-size: 1rem;
+      text-transform: uppercase; }
 
 .single-product-container img,
 .archive-product img,
@@ -1231,7 +1246,16 @@ i {
   color: black;
   font-size: 2.6rem;
   font-weight: bold;
-  display: inline; }
+  display: inline-block;
+  margin-top: 2em; }
+
+.product-type-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .side-bar-flex {
   display: -ms-flexbox;

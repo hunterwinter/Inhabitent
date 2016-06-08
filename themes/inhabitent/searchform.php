@@ -6,7 +6,7 @@
                 <i class="fa fa-search"></i>
             </a>
         <label>
-            <input type="search" class="search-field" placeholder="SEARCH AND HIT ENTER ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+            <input type="search" id="search-field" placeholder="SEARCH AND HIT ENTER ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
         </label>
         <span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
         </span>

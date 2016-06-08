@@ -43,6 +43,7 @@ a {
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		width: 325px;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -98,7 +99,7 @@ a {
 	a {
 		display: inline;
 		text-decoration: none;
-		width: 60px;
+		width: 70px;
 	}
 
 	.current_page_item > a,
@@ -146,12 +147,13 @@ a {
 	display: inline;
 }
 
-input {
-	display: inline;
+
+#search-field {
+
+	display: inline-block;
 }
 
-.search-field {
-	display: inline;
+#menu-item-132 {
+	padding-right: 0;
 }
-
 
