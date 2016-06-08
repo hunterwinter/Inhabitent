@@ -7,7 +7,7 @@
 
 // Add your custom taxonomies here...
 // Register Custom Taxonomy
-function tent_register_profuct_type_tax() {
+function tent_register_product_type_tax() {
 
 	$labels = array(
 		'name'                       => 'Product Types',
@@ -31,6 +31,13 @@ function tent_register_profuct_type_tax() {
 		'items_list'                 => 'Product Types list',
 		'items_list_navigation'      => 'Product Types list navigation',
 	);
+
+	$rewrite = array(
+        'slug'                       => 'product-type',
+        'with_front'                 => true,
+        'hierarchical'               => false,
+    );
+	
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
@@ -43,4 +50,4 @@ function tent_register_profuct_type_tax() {
 	register_taxonomy( 'product-type', array( 'product' ), $args );
 
 }
-add_action( 'init', 'tent_register_profuct_type_tax', 0 );
+add_action( 'init', 'tent_register_product_type_tax', 0 );
