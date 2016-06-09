@@ -441,6 +441,9 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+fieldset {
+  border: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1026,15 +1029,16 @@ input[type=search] {
   width: 200px;
   display: none; }
 
-fieldset {
+.site-header fieldset {
   padding: 0;
   border: none;
   height: 0; }
-  fieldset button,
-  fieldset button:hover {
+  .site-header fieldset button,
+  .site-header fieldset button:hover {
     background-color: none; }
-  fieldset input {
-    height: 20px; }
+  .site-header fieldset input {
+    height: 20px;
+    text-transform: uppercase; }
 
 .search-field {
   display: none; }
@@ -1640,3 +1644,32 @@ p span {
 
 .search .page-content {
   padding-top: 10px; }
+
+.single-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  border-right: 1px solid #e1e1e1;
+  padding: 3.25rem 5% 3rem 0;
+  width: 73%; }
+
+.sidebar-control {
+  display: -ms-flexbox;
+  display: flex; }
+
+.error-404 .search-btn {
+  display: none; }
+
+.error-404 .search-field {
+  display: inline-block; }
+
+.error-404 ul {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.error-404 h1,
+.error-404 h2 {
+  display: block;
+  margin: 0;
+  text-align: left; }

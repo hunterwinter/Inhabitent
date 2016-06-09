@@ -48,7 +48,7 @@ input[type=search] {
     display: none;
   }
 
-fieldset {
+.site-header fieldset {
     padding: 0;
     border: none; 
     height: 0;
@@ -58,6 +58,7 @@ fieldset {
     }
     input {
         height: 20px;
+        text-transform: uppercase;
     }
 }
 

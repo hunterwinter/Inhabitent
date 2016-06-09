@@ -7,7 +7,6 @@
 
 get_header(); ?>
 
-get_header(); ?>
 <div class="page-content">
 
 	<div id="primary" class="content-area single-wrap">
