@@ -293,7 +293,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "novocento", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -453,7 +453,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #19625d; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -629,11 +629,11 @@ a {
   .widget-area a {
     color: #248A83; }
     .widget-area a:hover {
-      color: midnightblue; }
+      color: #19625d; }
     .widget-area a:visited {
       color: #248A83; }
       .widget-area a:visited:hover {
-        color: midnightblue; }
+        color: #19625d; }
 
 /* Contact Information */
 .textwidget p {
@@ -848,7 +848,14 @@ h2 {
       padding-bottom: 20px; }
       .journal-post .journal-info h3 a {
         text-decoration: none;
-        color: #248A83; }
+        color: #248A83;
+        text-decoration: none;
+        color: #248A83;
+        font-family: novocento;
+        letter-spacing: 2px;
+        font-size: 1.3rem;
+        line-height: 1.25;
+        text-transform: uppercase; }
         .journal-post .journal-info h3 a:hover {
           color: purple; }
 
@@ -960,7 +967,7 @@ h2 {
 .readtag {
   border: 1px solid white;
   padding: 12.5px 25px;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -980,7 +987,7 @@ h2 {
 
 .button {
   padding: 12.5px 25px;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -1037,11 +1044,10 @@ input[type=search] {
   .site-header fieldset button:hover {
     background-color: none; }
   .site-header fieldset input {
-    height: 20px;
-    text-transform: uppercase; }
+    height: 20px; }
 
-.search-field {
-  display: none; }
+#search-field {
+  text-transform: uppercase; }
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
@@ -1119,11 +1125,11 @@ i {
   .widget-area a {
     color: #248A83; }
     .widget-area a:hover {
-      color: midnightblue; }
+      color: #19625d; }
     .widget-area a:visited {
       color: #248A83; }
       .widget-area a:visited:hover {
-        color: midnightblue; }
+        color: #19625d; }
 
 /* Contact Information */
 .textwidget p {
@@ -1157,7 +1163,7 @@ i {
   .product-links li {
     padding: 10px 30px;
     font-size: 1.2rem;
-    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-family: "novocento", sans-serif;
     font-weight: normal;
     text-transform: uppercase; }
     .product-links li a {
@@ -1305,11 +1311,11 @@ i {
   .widget-area a {
     color: #248A83; }
     .widget-area a:hover {
-      color: midnightblue; }
+      color: #19625d; }
     .widget-area a:visited {
       color: #248A83; }
       .widget-area a:visited:hover {
-        color: midnightblue; }
+        color: #19625d; }
 
 /* Contact Information */
 .textwidget p {
@@ -1403,12 +1409,12 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
 
 label {
   text-transform: uppercase;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "novocento", sans-serif;
   font-size: 1.1rem; }
 
 input[type=submit] {
   padding: 12.5px 25px;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 0.9rem;
@@ -1418,7 +1424,7 @@ input[type=submit] {
   text-shadow: none;
   border: 0; }
   input[type=submit]:hover {
-    background-color: midnightblue;
+    background-color: #19625d;
     color: white;
     box-shadow: none; }
   input[type=submit]:visited {
@@ -1471,7 +1477,7 @@ input[type=submit] {
   position: absolute;
   right: 0;
   bottom: 0;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   padding: 2.5px 20px;
   font-size: 0.9rem;
@@ -1483,7 +1489,7 @@ input[type=submit] {
 .moretag {
   border: 1px solid black;
   padding: 12.5px 25px;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "novocento", sans-serif;
   text-transform: uppercase;
   color: black;
   font-size: 0.9rem; }
@@ -1510,7 +1516,7 @@ input[type=submit] {
 
 .cat-links, .tags-links {
   text-transform: uppercase;
-  font-family: "Courier 10 Pitch", Courier, monospace; }
+  font-family: "novocento", sans-serif; }
   .cat-links a, .tags-links a {
     color: #248A83; }
     .cat-links a:hover, .tags-links a:hover {
@@ -1574,7 +1580,7 @@ p span {
 
 .wpcf7-form label {
   text-transform: uppercase;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "novocento", sans-serif;
   font-size: 1.1rem;
   font-weight: normal; }
 
@@ -1661,7 +1667,7 @@ p span {
 .error-404 .search-btn {
   display: none; }
 
-.error-404 .search-field {
+.error-404 #search-field {
   display: inline-block; }
 
 .error-404 ul {

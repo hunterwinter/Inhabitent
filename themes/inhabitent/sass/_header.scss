@@ -58,19 +58,14 @@ input[type=search] {
     }
     input {
         height: 20px;
-        text-transform: uppercase;
+        // text-transform: uppercase;
     }
 }
 
-.search-field {
-    display: none;
+#search-field {
+    text-transform: uppercase;
 }
 
-// .container {
-//     display: flex;
-//     margin: 0 auto;
-//     width: 1120px;
-// }
 
 .site-header {
     background-color: hsla(0,0%,100%,.85);

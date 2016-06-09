@@ -103,6 +103,14 @@ h2 {
     a {
       text-decoration: none;
       color: $color__link;
+      text-decoration: none;
+      color: #248A83;
+      font-family: novocento;
+      letter-spacing: 2px;
+      font-size: 1.3rem;
+      line-height: 1.25;
+      text-transform: uppercase; 
+      
       &:hover {
         color: $color__link-visited;
         }
